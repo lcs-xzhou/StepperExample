@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     // MARK: Stored properties
+    @State var base: Int = 1
     
     // MARK: Computed properties
     var body: some View {
@@ -19,7 +20,7 @@ struct ContentView: View {
             
             HStack(alignment: .top) {
                 
-                Text("5")
+                Text("\(base)")
                     .font(.system(size: 96))
                 
                 Text("2")
