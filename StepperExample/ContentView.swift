@@ -32,6 +32,12 @@ struct ContentView: View {
                 Text("25")
                     .font(.system(size: 96))
             }
+            Stepper(
+                value: $base,
+                label: {
+                    Text("Base")
+                }
+            )
             
             Spacer()
         }
